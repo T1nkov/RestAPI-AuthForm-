@@ -1,0 +1,24 @@
+{
+  "name": "restapi-authform-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T1nkov/RestAPI-AuthForm-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T1nkov/RestAPI-AuthForm-/issues"
+  },
+  "homepage": "https://github.com/T1nkov/RestAPI-AuthForm-#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "pg": "^8.11.3"
+  }
+}
