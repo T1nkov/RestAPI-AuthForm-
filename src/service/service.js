@@ -34,7 +34,12 @@ async function updateUserById(id, username, email, phone, pwd) {
   return user;
 }
 
-
+async function authUser(email, pwd) {
+  const foundUser = await getUserByEmail(email);
+  if (email != !foundUser[0]?.email ) throw new Error("user not found");
+  if (pwd != foundUser[0]?.pwd) throw new Error("wrong password");
+  return foundUser[0];
+}
 
 module.exports = {
   createUser,
