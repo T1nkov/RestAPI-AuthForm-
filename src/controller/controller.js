@@ -1,4 +1,5 @@
 const express = require("express");
+const { createToken } = require("../helper/jwt");
 const router = express.Router();
 const {
   createUser,
@@ -70,10 +71,23 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// router.post("/auth", async (req, res) => {
+//   try {
+//     const { email, pwd } = req.body;
+//     const user = await authUser(email, pwd);
+//     res.status(200).send(user);
+//   } catch (error) {
+//     res.status(404).send(error.message);
+//   }
+// });
+
 router.post("/auth", async (req, res) => {
   try {
     const { email, pwd } = req.body;
     const user = await authUser(email, pwd);
+    const token = createToken();
+    console.log(token);
+    res.setHeader("access-token", token);
     res.status(200).send(user);
   } catch (error) {
     res.status(404).send(error.message);
