@@ -71,16 +71,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// router.post("/auth", async (req, res) => {
-//   try {
-//     const { email, pwd } = req.body;
-//     const user = await authUser(email, pwd);
-//     res.status(200).send(user);
-//   } catch (error) {
-//     res.status(404).send(error.message);
-//   }
-// });
-
 router.post("/auth", async (req, res) => {
   try {
     const { email, pwd } = req.body;

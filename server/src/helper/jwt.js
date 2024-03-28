@@ -6,3 +6,4 @@ function createToken() {
 }
 
 module.exports = { createToken };
+
