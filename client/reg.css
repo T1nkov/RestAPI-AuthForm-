@@ -1,51 +1,44 @@
-/* Стили для обертки формы */
 .form-wrapper {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Стили для текстовых полей */
-  .form-wrapper input[type="text"],
-  .form-wrapper input[type="email"],
-  .form-wrapper input[type="tel"],
-  .form-wrapper input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f4f4f4;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Стили для кнопки отправки */
-  .form-wrapper button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Стили для кнопки отправки при наведении */
-  .form-wrapper button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Стили для кнопки отправки при активации */
-  .form-wrapper button:active {
-    background-color: #3d8b40;
-  }
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="tel"],
+.form-wrapper input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  color: #333;
+}
 
-  /* Добавление анимации при наведении на текстовые поля */
+.form-wrapper button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-wrapper button:hover {
+  background-color: #45a049;
+}
+
+.form-wrapper button:active {
+  background-color: #3d8b40;
+}
+
 .form-wrapper input[type="text"]:hover,
 .form-wrapper input[type="email"]:hover,
 .form-wrapper input[type="tel"]:hover,
@@ -54,7 +47,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Добавление эффекта "плавающих" заголовков над текстовыми полями */
 .form-wrapper input[type="text"]:focus ~ label,
 .form-wrapper input[type="email"]:focus ~ label,
 .form-wrapper input[type="tel"]:focus ~ label,
@@ -64,7 +56,6 @@
   color: #999;
 }
 
-/* Анимация для кнопки отправки */
 .form-wrapper button {
   transition: transform 0.3s ease-in-out;
 }
@@ -73,17 +64,14 @@
   transform: scale(1.1);
 }
 
-/* Добавление тени для формы */
 .form-wrapper {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Добавление градиента для кнопки отправки */
 .form-wrapper button {
   background: linear-gradient(to right, #64b5f6, #1976d2);
 }
 
-/* Добавление анимации пульсации для кнопки отправки */
 @keyframes pulse {
   0% {
     transform: scale(1);
